@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ByChance Dating App</title>
+  <meta name="description" content="Privacy Policy for ByChance - Social & Dating Mobile Application. Learn how we collect, protect, and handle your data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #8A20EF;
+      --primary-light: #9E34F6;
+      --primary-dark: #6F09DC;
+      --primary-gradient: linear-gradient(135deg, #8A20EF 0%, #6610FF 100%);
+      --bg-body: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+      --accent-badge: #F1EAFF;
+      --accent-badge-text: #7009DD;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --radius-lg: 16px;
+      --radius-md: 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: var(--primary-gradient);
+      color: #FFFFFF;
+      padding: 60px 20px 70px;
+      text-align: center;
+      position: relative;
+    }
+
+    .header-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .app-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 8px 18px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+    }
+
+    .app-brand-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      box-shadow: 0 0 10px #FFFFFF;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+
+    .header-meta {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: -40px auto 60px;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .content-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 24px;
+    }
+
+    .toc {
+      background: #FAF8FF;
+      border: 1px solid #E9DCFC;
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-bottom: 35px;
+    }
+
+    .toc h3 {
+      font-size: 1.1rem;
+      color: var(--primary-dark);
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .toc ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
+    }
+
+    .toc a {
+      color: #5510AD;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .toc a:hover {
+      color: var(--primary-light);
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 2px solid #F1F5F9;
+      padding-bottom: 8px;
+    }
+
+    h2 .section-num {
+      background: var(--accent-badge);
+      color: var(--accent-badge-text);
+      font-size: 0.85rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 800;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #1E293B;
+      margin: 20px 0 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #334155;
+    }
+
+    ul, ol {
+      margin: 10px 0 16px 24px;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: #FDF9FF;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 18px 0;
+    }
+
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .badge-pill {
+      display: inline-block;
+      background: var(--accent-badge);
+      color: var(--accent-badge-text);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 6px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 16px 0 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    th {
+      background-color: #F8FAFC;
+      color: #1E293B;
+      font-weight: 700;
+    }
+
+    tr:hover td {
+      background-color: #FAFAFC;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 50px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding: 40px 16px 60px;
+      }
+      h1 {
+        font-size: 1.85rem;
+      }
+      .content-card {
+        padding: 24px 18px;
+      }
+      .toc ul {
+        grid-template-columns: 1fr;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="app-brand">
+        <span class="app-brand-dot"></span>
+        <span>ByChance Dating &amp; Social</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="header-meta">Application ID: <strong>com.app.bychance</strong> &bull; Effective Date: October 1, 2026</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-card">
+      <p>Welcome to <strong>ByChance</strong> (referred to as "Application", "we", "us", or "our"). We are committed to protecting your privacy, safeguarding your personal data, and maintaining transparency about how your information is collected, processed, and managed when using the ByChance mobile application and associated online services at <strong>https://app.bychance.online/</strong>.</p>
+      
+      <p>This Privacy Policy has been established in compliance with applicable data protection laws, including the General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), and the Google Play Developer Distribution Policy &amp; User Data Policy.</p>
+
+      <div class="toc">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="#section-1">1. Information We Collect</a></li>
+          <li><a href="#section-2">2. How We Use Your Information</a></li>
+          <li><a href="#section-3">3. Device Permissions &amp; Hardware Access</a></li>
+          <li><a href="#section-4">4. Profile &amp; Privacy Controls (Blocking &amp; Safety)</a></li>
+          <li><a href="#section-5">5. Third-Party Services &amp; SDKs</a></li>
+          <li><a href="#section-6">6. Account Deletion &amp; Data Retention</a></li>
+          <li><a href="#section-7">7. Children's Privacy (Strict 18+ Policy)</a></li>
+          <li><a href="#section-8">8. Data Security &amp; Encryption</a></li>
+          <li><a href="#section-9">9. Your Rights &amp; Choices</a></li>
+          <li><a href="#section-10">10. Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- SECTION 1 -->
+      <section id="section-1">
+        <h2><span class="section-num">01</span> Information We Collect</h2>
+        <p>To provide matching, discovery, dating, and real-time social communication features, we collect several categories of information:</p>
+
+        <h3>A. Information You Provide Directly</h3>
+        <ul>
+          <li><strong>Account Registration &amp; Authentication:</strong> Full name, phone number, email address, date of birth, gender, and social login credentials (if you sign in with Google or Facebook).</li>
+          <li><strong>Profile Details:</strong> Photos, biography, relationship goals, interests, languages spoken, religion, and profile preferences.</li>
+          <li><strong>Identity Verification:</strong> Optional government-issued identification document or selfie photo if you choose to request a verified profile badge.</li>
+          <li><strong>Communications &amp; Chat Data:</strong> Messages, voice notes, stickers, gifts, and interaction history exchanged with other users within the app.</li>
+          <li><strong>In-App Purchases &amp; Transactions:</strong> Order tokens and transaction history for subscription plans and virtual coins (payment card details are processed directly and securely through Google Play Billing and are never stored on our servers).</li>
+        </ul>
+
+        <h3>B. Information Collected Automatically</h3>
+        <ul>
+          <li><strong>Geolocation Data:</strong> With your permission, we collect precise (GPS) and approximate (network-based) location to display nearby profiles, compute distance for matches, and support the Passport feature.</li>
+          <li><strong>Audio &amp; Video Streams:</strong> Audio and video data transmitted during live 1-on-1 calls. Real-time media streams are encrypted and are not recorded or archived on our servers.</li>
+          <li><strong>Device &amp; Usage Information:</strong> Device model, operating system version, unique device identifiers, IP address, connection status, crash logs, and app performance analytics.</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section id="section-2">
+        <h2><span class="section-num">02</span> How We Use Your Information</h2>
+        <p>We use the data collected for legitimate business purposes and core app functionality:</p>
+        <ul>
+          <li><strong>Matchmaking &amp; Discovery:</strong> Calculating mutual compatibility, filtering profiles by age/distance/preferences, and presenting potential matches.</li>
+          <li><strong>Real-Time Communication:</strong> Facilitating direct text messaging, real-time audio calls, and video calls between matched users.</li>
+          <li><strong>Push Notifications:</strong> Alerting you about new matches, incoming messages, incoming call notifications, and profile likes via OneSignal.</li>
+          <li><strong>Safety, Trust &amp; Anti-Spam:</strong> Detecting fake accounts, preventing unauthorized logins, combating harassment, and enforcing community safety rules.</li>
+          <li><strong>In-App Purchases:</strong> Unlocking premium features, virtual gifts, coins, and subscription perks.</li>
+          <li><strong>Customer Support:</strong> Assisting you with technical troubleshooting, bug reports, and safety inquiries.</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 3 -->
+      <section id="section-3">
+        <h2><span class="section-num">03</span> Device Permissions &amp; Hardware Access</h2>
+        <p>ByChance requests explicit runtime permissions on Android devices to deliver essential dating features. You have full control to grant or revoke these permissions in your Android System Settings at any time:</p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Type</th>
+                <th>Purpose &amp; Usage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>ACCESS_FINE_LOCATION</code><br><code>ACCESS_COARSE_LOCATION</code></td>
+                <td>Location</td>
+                <td>Calculates physical distance to matches and suggests nearby profiles based on your discovery radius settings.</td>
+              </tr>
+              <tr>
+                <td><code>CAMERA</code></td>
+                <td>Hardware</td>
+                <td>Enables taking profile photos, selfie identity verification, and live 1-on-1 video calling.</td>
+              </tr>
+              <tr>
+                <td><code>RECORD_AUDIO</code><br><code>MODIFY_AUDIO_SETTINGS</code></td>
+                <td>Microphone</td>
+                <td>Allows clear voice communication during audio calls, video calls, and voice notes.</td>
+              </tr>
+              <tr>
+                <td><code>POST_NOTIFICATIONS</code><br><code>USE_FULL_SCREEN_INTENT</code></td>
+                <td>Notifications</td>
+                <td>Delivers incoming call alerts, match updates, and instant chat messages.</td>
+              </tr>
+              <tr>
+                <td><code>BLUETOOTH_CONNECT</code></td>
+                <td>Connectivity</td>
+                <td>Routes in-call audio to connected Bluetooth headsets, earphones, or hands-free devices.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION 4 -->
+      <section id="section-4">
+        <h2><span class="section-num">04</span> Profile &amp; Privacy Controls (Blocking &amp; Safety)</h2>
+        <p>We believe user privacy and personal safety are fundamental. ByChance provides built-in privacy and security controls directly accessible inside the app under <strong>Profile &gt; Account &amp; Security &gt; Profile &amp; Privacy</strong>:</p>
+
+        <div class="highlight-box">
+          <p><strong><span class="badge-pill">User Blocking</span> Blocked Users Management:</strong></p>
+          <p>You can instantly block any user at any time from their profile or chat. All blocked individuals are isolated in your dedicated <strong>Blocked Users</strong> list in the <strong>Profile &amp; Privacy</strong> screen. When you block a user:</p>
+          <ul>
+            <li>They cannot view your profile or photos.</li>
+            <li>They cannot send you messages or start audio/video calls.</li>
+            <li>You will no longer appear in their discovery stack or search results.</li>
+            <li>You can view and unblock users at your own discretion.</li>
+          </ul>
+        </div>
+
+        <div class="highlight-box">
+          <p><strong><span class="badge-pill">Safety Reporting</span> Reporting Violations:</strong></p>
+          <p>We maintain a zero-tolerance policy for harassment, abusive behavior, nudity, fraud, scamming, or privacy violations. You can report any profile or message directly inside the app. Our moderation team reviews reports promptly and takes decisive disciplinary action, including permanent account termination.</p>
+        </div>
+
+        <div class="highlight-box">
+          <p><strong><span class="badge-pill">Discovery Controls</span> Incognito &amp; Passport:</strong></p>
+          <p>Users can activate Incognito Mode to browse discreetly, or customize their Passport Location to explore connections in different cities while keeping their exact coordinates private.</p>
+        </div>
+      </section>
+
+      <!-- SECTION 5 -->
+      <section id="section-5">
+        <h2><span class="section-num">05</span> Third-Party Services &amp; SDKs</h2>
+        <p>To provide stable, secure, and performant functionality, ByChance integrates trusted third-party SDKs that process limited data in compliance with their own privacy policies:</p>
+        <ul>
+          <li><strong>Google Play Services &amp; Google Play Billing:</strong> Account authentication, in-app purchases, and security checks (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>).</li>
+          <li><strong>Google Maps &amp; Geocoding APIs:</strong> Mapping displays and approximate distance calculations (<a href="https://cloud.google.com/maps-platform/terms" target="_blank" rel="noopener">Google Maps Terms</a>).</li>
+          <li><strong>Google Mobile Ads (AdMob):</strong> Displaying contextual and personalized advertisements (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads Privacy</a>).</li>
+          <li><strong>OneSignal:</strong> Dispatching real-time push notifications and VoIP incoming call alerts (<a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener">OneSignal Privacy Policy</a>).</li>
+          <li><strong>Agora.io / ZEGOCLOUD:</strong> Encrypted WebRTC infrastructure for live audio and video calling (<a href="https://www.agora.io/en/privacy-policy/" target="_blank" rel="noopener">Agora Privacy Policy</a>).</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 6 -->
+      <section id="section-6">
+        <h2><span class="section-num">06</span> Account Deletion &amp; Data Retention</h2>
+        <p>In full adherence to Google Play's <strong>Account Deletion Policy</strong>, we empower all ByChance users to easily request and execute the permanent deletion of their account and associated data:</p>
+
+        <h3>How to Delete Your Account In-App:</h3>
+        <ol>
+          <li>Open the ByChance application.</li>
+          <li>Navigate to your <strong>Profile</strong> tab.</li>
+          <li>Tap <strong>Settings</strong> or <strong>Account &amp; Security</strong>.</li>
+          <li>Select <strong>Delete Account</strong> and confirm your request.</li>
+        </ol>
+
+        <div class="highlight-box">
+          <p><strong>What Happens When You Delete Your Account:</strong></p>
+          <ul>
+            <li>Your account, profile information, photos, matches, and chat messages are permanently purged from our active database.</li>
+            <li>Your active push notification tokens are decoupled and deregistered.</li>
+            <li>Your profile will immediately stop appearing in the discovery stack of other members.</li>
+            <li>We do not retain your personal profile data beyond the period strictly required to comply with statutory legal, tax, or fraud prevention obligations.</li>
+          </ul>
+        </div>
+
+        <p>If you have uninstalled the app or are unable to access your account, you may also request complete account and data erasure by emailing our support team at <a href="mailto:privacy@bychance.online">privacy@bychance.online</a> with your registered phone number or email address.</p>
+      </section>
+
+      <!-- SECTION 7 -->
+      <section id="section-7">
+        <h2><span class="section-num">07</span> Children's Privacy (Strict 18+ Policy)</h2>
+        <p>ByChance is exclusively designed and operated for adults. Individuals under the age of <strong>18</strong> (or the legal age of majority in your jurisdiction) are strictly prohibited from downloading, registering for, or using the Application.</p>
+        <p>We do not knowingly solicit or collect personal information from minors. If we discover or are notified that an account belongs to an individual under 18 years old, we will immediately suspend the account and permanently delete all related personal information from our servers.</p>
+      </section>
+
+      <!-- SECTION 8 -->
+      <section id="section-8">
+        <h2><span class="section-num">08</span> Data Security &amp; Encryption</h2>
+        <p>We implement rigorous technical and organizational security measures to protect your personal information from unauthorized access, accidental alteration, disclosure, or destruction:</p>
+        <ul>
+          <li>All network traffic between your mobile device and our backend servers is encrypted using modern <strong>Transport Layer Security (TLS/HTTPS)</strong>.</li>
+          <li>Audio and video call streams are transmitted using secure, end-to-end encrypted real-time protocols.</li>
+          <li>Sensitive access tokens, authorization secrets, and login credentials are encrypted in local device secure storage.</li>
+          <li>Database access is restricted, audited, and safeguarded with firewall and intrusion prevention layers.</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 9 -->
+      <section id="section-9">
+        <h2><span class="section-num">09</span> Your Rights &amp; Choices</h2>
+        <p>Depending on your geographic location and local jurisdiction (such as under GDPR or CCPA), you may have the following data rights:</p>
+        <ul>
+          <li><strong>Right of Access:</strong> Request a copy of the personal information we hold about you.</li>
+          <li><strong>Right to Rectification:</strong> Edit, correct, and update your personal profile information at any time within the app.</li>
+          <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Request full deletion of your account and personal records.</li>
+          <li><strong>Right to Restrict or Object:</strong> Control permissions such as Location, Camera, and Microphone via your device settings.</li>
+          <li><strong>Right to Withdraw Consent:</strong> Revoke consent for promotional notifications or analytics at any time.</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 10 -->
+      <section id="section-10">
+        <h2><span class="section-num">10</span> Changes &amp; Contact Information</h2>
+        <p>We may update this Privacy Policy from time to time to reflect operational, regulatory, or policy changes. Any significant updates will be notified through an in-app notice or by updating the "Effective Date" at the top of this document.</p>
+
+        <p>If you have any questions, feedback, or privacy-related requests regarding this Privacy Policy or your personal data, please contact our dedicated Data Protection Officer and Support Team at:</p>
+
+        <div class="highlight-box">
+          <p><strong>ByChance Privacy &amp; Support Team</strong></p>
+          <p>Email: <a href="mailto:privacy@bychance.online">privacy@bychance.online</a> / <a href="mailto:support@bychance.online">support@bychance.online</a></p>
+          <p>Website: <a href="https://app.bychance.online/" target="_blank" rel="noopener">https://app.bychance.online/</a></p>
+          <p>Application: <strong>ByChance</strong> (<code>com.app.bychance</code>)</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ByChance. All rights reserved. &bull; <a href="#top">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
